@@ -1,0 +1,58 @@
+/* configurações globais */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #2a2a2a;
+}
+
+:root{
+    --fonte-texto: Montserrat;
+    --fonte-titulo: Outfit;
+    --tamanho-fonte-titulo: bold;
+
+}
+
+.sobre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    font-family: var(--fonte-texto);
+    padding: 3em;
+}
+
+.tituloSobre{
+    display: flex;
+    justify-content: center;
+    color: #ca2b16;
+    margin-bottom: 1em;
+}
+
+.tituloSobre h1{
+    font-family: var(--fonte-titulo);
+    font-size: 2em;
+    padding: 10px;
+    border-top:1px solid #fff;
+}
+
+#sobre1, #sobre2{
+    font-size: 1.5em;
+}
+
+#sobre1{
+    padding: 2em;
+}
+
+#pumpPalace{
+    color: #ca2b16;
+    font-weight: var(--tamanho-fonte-titulo);
+}
+
+.negrito{
+    font-weight: var(--tamanho-fonte-titulo);
+}

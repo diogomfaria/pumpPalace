@@ -1,0 +1,125 @@
+
+/* configurações globais */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #fbf5f5;
+}
+
+:root{
+    --fonte-texto: Montserrat;
+    --fonte-titulo: Outfit;
+    --tamanho-fonte-titulo: bold;
+
+}
+
+.planosTitulo{
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+.planosTitulo h1{
+    font-family: var(--fonte-titulo);
+    text-align: center;
+    font-weight: var(--tamanho-fonte-titulo);
+    font-size: 4em;
+    border-bottom: 1px solid #ca2b16;
+}
+
+.planosCards{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding-top: 3em;
+}
+
+.semanal, .mensal, .anual{
+    border: 2px solid #f4f0f0;
+    width: fit-content;
+    padding:0 3em 3em 3em;
+    box-shadow: 2px 4px 9px 3px rgb(217, 216, 216)
+}
+
+.semanal h3, .mensal h3, .anual h3{
+    text-align: center;
+    font-family: var(--fonte-texto);
+    font-weight: var(--tamanho-fonte-titulo);
+    color: #ca2b16;
+}
+
+.aulas ul{
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    color: #555;
+    font-size: 16px;
+    text-align: center;
+}
+
+.aulas li{
+    padding: 5px 0;
+    border-top: 1px solid #ddd;
+    font-family: var(--fonte-texto);
+}
+
+.preco{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.cifra{
+    color: rgba(148, 148, 148, 0.804);
+    vertical-align: top;
+    font-family: var(--fonte-texto);
+}
+
+.valorPlano{
+    font-size: 3.5em;
+    font-family: var(--fonte-texto);
+    font-weight: var(--tamanho-fonte-titulo);
+    margin: 0 0.2em;
+}
+
+.duracao{
+    font-size: 16px;
+    color: #777;
+    color: rgba(148, 148, 148, 0.804);
+    font-family: var(--fonte-texto);
+}
+
+.botao{
+    background-color: #ca2b16;
+    padding: 0.1em 1em;
+    border-radius: 40px;
+    color: #fff;
+    font-family: var(--fonte-texto);
+    font-weight: 500;
+    border: 0;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.3em;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10em;
+    font-family: var(--fonte-texto);
+    color: rgb(148, 148, 148);
+}
+
+#footer1{
+    font-weight: var(--tamanho-fonte-titulo);
+    margin-bottom: 1em;
+}
+    

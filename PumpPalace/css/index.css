@@ -1,0 +1,237 @@
+/* configurações globais */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #2a2a2a;
+}
+
+:root{
+    --fonte-texto: Montserrat;
+    --fonte-titulo: Outfit;
+    --tamanho-fonte-titulo: bold;
+
+}
+
+/* frase do topo do site  */
+.bemvindo{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: var(--fonte-texto);
+    background-color: #ca2b16;
+    color: #FFF;
+    text-align: center;
+}
+
+/* menu de navegação e logo */
+.navbar li{
+    padding-left: 3em;
+    list-style: none;
+    color: #FFF;
+}
+
+.navbar li a{
+    text-decoration: none;
+    color: #FFF;
+    cursor: pointer;
+    font-family: var(--fonte-texto);
+    font-size: large;
+    font-weight: var(--tamanho-fonte-titulo);
+}
+
+.navbar li a:hover{
+    text-decoration: underline #ca2b16 ;
+    color: #5d5a5a;
+}
+
+.cabecalho{
+    display: flex;
+    background-color: #191919;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar li{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.cabecalho img{
+    width: 60px;
+    height: 60px;
+}
+
+/* imagem de fundo e texto da tela principal */
+.intro img{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    object-fit: cover;
+}
+
+
+.intro p{
+
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    color: white;
+    font-size: 4.5em;
+    font-weight: 300;
+    text-align: center;
+    font-family: var(--fonte-texto);
+}
+
+#conheca{
+    background-color: #ebafaf;
+    color: red;
+}
+
+/* conteudo da parte de musculação */
+.horarios{
+    color: #FFF;
+    background-color: #191919;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--fonte-texto);
+    padding: 1em;
+    margin-top: 1em;
+    text-align: center;
+    padding-bottom: 2em;
+}
+
+.horarios p{
+    font-size: larger;
+}
+
+#musculacao, .diferencial h2{
+    padding-bottom: 10px;
+    font-family: var(--fonte-titulo);
+    color: #ca2b16;
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+/* conteudo da parte de modalidades */
+.modalidades{
+    padding: 2em 10em;
+    background-color: #ca2b16;
+    color: #FFF;
+    font-family: var(--fonte-texto);
+    text-align: center;
+}
+
+.modalidades h2{
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+
+.modalidades h5, h2{
+    font-family: var(--fonte-titulo);
+}
+
+.modalidadesFotos{
+    padding-top: 3em ;
+    justify-content: space-around;
+    display: flex;
+}
+
+.cross, .pilates, .alongamento {
+    position: relative;
+    display: inline-block;
+}
+
+.cross img, .pilates img, .alongamento img{
+    display: block;
+    width: 300px;
+}
+
+.cross h5, .pilates h5, .alongamento h5{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.3em;
+    font-family: var(--fonte-titulo);
+}
+
+.cross p, .pilates p, .alongamento p{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.3em;
+    font-family: var(--fonte-titulo);
+
+}
+
+
+/* conteudo da parte de diferenciais */
+
+.diferencial{
+    padding: 2em 10em;
+    background-color: #191919;
+    color: #FFF;
+    font-family: var(--fonte-texto);
+    text-align: center;
+}
+
+.diferenciais{
+    display: flex;
+    justify-content: space-around;
+    padding: 5em;
+    text-align: center;
+    align-items: center;
+    
+}
+
+.diferenciais img{
+    width: 90px;
+    background-color: #ca2b16;
+    border-radius: 60px;
+    padding: 1em;
+}
+
+.diferenciais h3{
+    padding-top: 0.5em;
+    display: block;
+}
+
+.diferenciais p{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-top: 0.7em;
+    color: #bfb975;
+}
+
