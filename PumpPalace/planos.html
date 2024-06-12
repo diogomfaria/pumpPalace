@@ -26,7 +26,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="sobre.html">Sobre Nós</a></li>
                 <li><a href="planos.html">Planos</a></li>
-                <li><a href="#">Contatos</a></li>
+                <li><a href="contato.html">Contatos</a></li>
             </ul>
     </header>
     <article>
@@ -47,7 +47,7 @@
                         <li>Alongamento</li>
                     </ul> 
                 </div>
-                <button class="botao">SEMANAL</button>
+                <button class="botao">Selecionar Plano</button>
             </section>
             <section class="mensal">
                 <h3>MENSAL</h3>
@@ -62,7 +62,7 @@
                         <li>Alongamento</li>
                     </ul> 
                 </div>
-                <button class="botao">MENSAL</button>
+                <button class="botao">Selecionar Plano</button>
             </section>
             <section class="anual">
                 <h3>ANUAL</h3>
@@ -77,17 +77,46 @@
                         <li>Alongamento</li>
                     </ul> 
                 </div>
-                <button class="botao">ANUAL</button>
+                <button type="button" class="botao">Selecionar Plano</button>
             </section>
         </section>
         <section class="footer">
             <p id="footer1">*Valores equivalentes a mensalidade para o plano desejado.</p>
             <p id="footer2">Diárias avulsas podem ser adquiridas por R$25,00</p>
         </section>
+        <footer class="rodape">
+            <div class="imgRodape">
+                <img src="img/Logo.png" alt="">
+            </div>
+            <div class="enderecoRodape">
+                <h5>Endereço</h5>
+                <p>R. Primavera, 191 - Jardim Paulista, <br> São Paulo - SP, 02327-030</p>
+            </div>
+            <div class="contatoRodape">
+                <h5>Contato</h5>
+                <p>E-mail: contatopumppalace@gmail.com.br<br>
+                    Telefone: (11) 95793-9594<br></p>
+            </div>
+            <div class="horariosRodape">
+                <h5>Horários</h5>
+                <p>Segunda à sexta, <br> das 07h às 13:30h e das 15:30h às 21h</p>
+            </div>
+        </footer>
     </article>
     
-</body>
+    <script>
+        document.querySelectorAll('.semanal, .mensal, .anual').forEach(plan => {
+            plan.addEventListener('mouseover', () => {
+                plan.style.transition = 'transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out';
+                plan.style.transform = 'translateY(-10px) scale(1.05)';
+                plan.style.boxShadow = '0 8px 16px rgba(0, 0, 0, 0.2)';
+            });
 
-    <!-- link do JS do bootstrap -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+            plan.addEventListener('mouseout', () => {
+                plan.style.transform = 'translateY(0) scale(1)';
+                plan.style.boxShadow = '0 2px 4px rgba(0, 0, 0, 0.1)';
+            });
+        });
+    </script>
+</body>
 </html>

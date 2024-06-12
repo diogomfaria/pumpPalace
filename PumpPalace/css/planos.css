@@ -42,7 +42,8 @@ body{
     border: 2px solid #f4f0f0;
     width: fit-content;
     padding:0 3em 3em 3em;
-    box-shadow: 2px 4px 9px 3px rgb(217, 216, 216)
+    box-shadow: 2px 4px 9px 3px rgb(217, 216, 216);
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
 }
 
 .semanal h3, .mensal h3, .anual h3{
@@ -123,3 +124,6 @@ body{
     margin-bottom: 1em;
 }
     
+.botao:hover{
+    cursor: pointer;
+}

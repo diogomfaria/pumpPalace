@@ -69,7 +69,7 @@ body{
     justify-content: center;
 }
 
-.cabecalho img{
+.cabecalho img, .rodape img{
     width: 60px;
     height: 60px;
 }
@@ -97,6 +97,7 @@ body{
 }
 
 #conheca{
+    padding-top: 1px;
     background-color: #ebafaf;
     color: red;
 }
@@ -235,3 +236,12 @@ body{
     color: #bfb975;
 }
 
+.rodape{
+    display: flex;
+    padding: 4em;
+    justify-content: space-evenly;
+    color: #FFF;
+    font-family: var(--fonte-texto);
+    margin-top: 15em;
+    background-color: #000;
+}
